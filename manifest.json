@@ -1,0 +1,17 @@
+{
+  "name": "Alfred",
+  "version": "0.0.1",
+  "description": "Custom chrome extension for minor tweaks",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["github.js"]
+    },
+    {
+      "matches": ["https://www.zomato.com/*"],
+      "js": ["zomato.js"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "manifest_version": 2
+}
